@@ -1,0 +1,559 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: "Lora", serif;
+    line-height: 1.5;
+    background-color: #f6f1e3;
+}
+
+main,
+nav,
+header {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h2{
+    padding: 10px;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.titulos-principales{
+    text-align: center;
+    font-style: italic;
+}
+
+/*HEADER*/
+
+header{
+    text-align: center;
+}
+
+header h1{
+    display: none;
+}
+
+/*NAV*/
+
+nav{
+    text-align: center;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 90px;
+    border-style: double;
+    border-color: #5cd7f6;
+}
+
+nav a {
+    padding: 13px 20px;
+    margin: 15px;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    background-color: #ecd05d;
+    border-radius: 20px;
+    border: 1px solid #000000;
+}
+
+nav a:hover {
+    color: whitesmoke;
+    background-color: #0b668a;
+    border: 1px solid whitesmoke;
+}
+
+/*INTRODUCCION*/
+
+#introduccion{
+    background-color: #faebd7;
+    box-shadow: -3px 3px 20px 3px #6d6d6d;
+}
+
+#introduccion h2{
+    background-color: #833f07;
+    color: #faebd7;
+}
+
+.texto-introduccion p{
+    line-height: 1.5;
+    text-align: justify;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.texto-introduccion em{
+    color: #002e6b;
+}
+
+.texto-introduccion strong{
+    color: #69040d;
+}
+
+.introduccion-img{
+    float: left;
+    max-width: 45%;
+    margin: 20px;
+    box-shadow: 4px 4px 7px 0px rgb(107, 106, 106);
+    border-radius: 10px;
+}
+
+.introduccion-img-luffy{
+    float: right;
+    max-width: 35%;
+    margin: 20px;
+    box-shadow: 4px 4px 7px 0px rgb(107, 106, 106);
+    border-radius: 10px;
+}
+
+/*ARCOS Y SAGAS*/
+
+#arcos-sagas{
+    background-color: whitesmoke;
+    box-shadow: -3px 3px 20px 3px #6d6d6d;
+    background-image: url(../img/pattern.webp);
+    background-repeat: repeat;
+    background-position: bottom right;
+    background-attachment: fixed;
+}
+
+#arcos-sagas h2{
+    color: #ecd05d;
+    background-color: #5c030c;
+}
+
+.lista-sagas{
+    padding: 0 10px;
+    list-style: none;
+    text-align: center;
+}
+
+.tarjeta-saga{
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+    width: 390px;
+    vertical-align: top;
+}
+
+.lista-sagas li > img{
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+.lista-sagas li > h3{
+    text-align: center;
+    background-color: #5c030c;
+    color: #ecd05d;
+    text-transform: uppercase;
+    padding: 11px;
+}
+
+.saga-descripcion{
+    background-color: #ffa970;
+    font-size: 22px;
+    line-height: 1.5;
+    display: block;
+    padding: 20px 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.bckg-primera{
+    background-color: #efca81;
+}
+
+.bckg-segunda{
+    background-color: #77d6fd;
+}
+
+.bckg-tercera{
+    background-color: #feb4e5;
+}
+
+.bckg-cuarta{
+    background-color: #fad48b;
+}
+
+.bckg-quinta{
+    background-color: #71bb1c;
+}
+
+.bckg-sexta{
+    background-color: #efefef;
+}
+
+.bckg-septima{
+    background-color: #72e7fb;
+}
+
+.bckg-octava{
+    background-color: #fa7f33;
+}
+
+.bckg-whole{
+    background-color: #ff9ebe;
+}
+
+.bckg-wano{
+    background-color: #72e7fb;
+}
+
+.bckg-final{
+    background-color: rgb(213 213 213);
+    width: 80%;
+    margin: 40px auto;
+    color: #000000;
+}
+
+.lista-sagas li h4{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    background-color: #5c030c;
+    color: #faebd7;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 1px 0;
+}
+
+
+.arcos p{
+    font-size: 18px;
+    display: block;
+    text-align: right;
+    padding: 5px 7px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+
+/*PERSONAJES*/
+
+#personajes{
+    box-shadow: -3px 3px 20px 3px #6d6d6d;
+    background-image: url(../img/backgroundpersonajes.jpg);
+    background-repeat: repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+#personajes h2{
+    padding: 10px;
+    background-color: #e1c591;
+    margin-bottom: 30px;
+}
+
+#personajes h3{
+    box-shadow: -3px 3px 20px 3px #1f1d1d;
+    padding: 10px 0px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.tarjeta-personaje{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.tarjeta{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.tarjeta img{
+    width: 100%;
+}
+
+.descripcion{
+    width: 80%;
+    margin: 0 auto 30px auto;
+    line-height: 2;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.luffy{
+    background-color: #751328;
+    color: antiquewhite;
+    border-top: 6px solid #751328;
+}
+
+.luffy h3{
+    background-color: #b62141;
+}
+
+.zoro{  
+    background-color: #9fed54;
+    border-top: 5px solid #9fed54;
+}
+
+.zoro h3{
+    background-color: #64b419;
+}
+
+.nami{
+    background-color: #fe9f58;
+    border-top: 5px solid #fe9f58;
+}
+
+.nami h3{
+    background-color: #f17d24;
+}
+
+.usopp{
+    background-color: bisque;
+    border-top: 5px solid bisque;
+}
+
+.usopp h3{
+    background-color: rgb(245, 203, 152);
+}
+
+.sanji{
+    background-color: #e1e06a;
+    border-top: 5px solid #e1e06a;
+}
+
+.sanji h3{
+    background-color: #d8d51e;
+}
+
+.chopper{
+    background-color: rgb(212, 152, 72);
+    border-top: 5px solid rgb(212, 152, 72);
+}
+
+.chopper h3{
+    background-color: rgb(204, 131, 35);
+}
+
+.robin{
+    background-color: rgb(6, 184, 154);
+    border-top: 5px solid rgb(6, 184, 154);
+}
+
+.robin h3{
+    background-color: rgb(74, 238, 211);
+}
+
+.franky{
+    background-color: #1eb0d9;
+    border-top: 5px solid #1eb0d9;
+}
+
+.franky h3{
+    background-color: #80e4ff
+}
+
+.brook{
+    background-color: rgb(212, 201, 201);
+    border-top: 5px solid rgb(212, 201, 201);
+}
+
+.brook h3{
+    background-color: rgb(170, 147, 147);
+}
+
+.jinbe{
+    background-color: rgb(185, 235, 255);
+    border-top: 5px solid rgb(185, 235, 255);
+}
+
+.jinbe h3{
+    background-color: rgb(100, 204, 245);
+}
+
+/*CARTOGRAFIA*/
+
+#cartografia{
+    background-color: #f5f5f5;
+    box-shadow: -3px 3px 20px 3px #6d6d6d;
+    margin: 0 auto;
+}
+
+#cartografia h2{
+    background-color: #fcd7ac;
+
+}
+
+.contenedor-blue-star p{
+    padding: 20px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.contenedor-blue-star ul{
+    background-color: whitesmoke;
+    padding-left: 20px; 
+}
+
+.zona{
+    padding-bottom: 50px;
+}
+
+.oceanos-principales li{
+    list-style: none;
+    padding-left: 0;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+.blue-star-img:hover{
+    background: none;
+    opacity: 1;
+    transition: 1s;
+}
+
+.blue-star-img img{
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contenedor-east-blue h3{
+    background-color: #75530d;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.contenedor-east-blue{
+    background-color: #f5f5f5;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contenedor-east-blue span{
+    color: whitesmoke;
+}
+
+.contenedor-east-blue p{
+    line-height: 1.8;
+    font-size: 20px;
+    background-color: #ab8231;
+    border-style: double;
+    border-color: #ffe4ae;
+    color: #000000;
+    /* margin-bottom: 30px; */
+}
+
+.contenedor-east-blue img{
+    display: block;
+    width: 100%;
+}
+
+.contenedor-east-blue h4{
+    background-color: #d4c9c9;
+    padding: 20px;
+    color: #473411;
+    text-align: left;
+    font-size: 17px;
+}
+
+.islas-east-blue{
+    list-style: none;
+    margin: 20px auto;
+    padding-bottom: 15px;
+}
+.islas-east-blue li{
+    text-align: left;
+    background-color: #d5b35f;
+    margin: 4px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.islas-east-blue li:nth-child(odd){
+    background-color: #ffefc6;
+}
+
+/*GLOSARIO*/
+#glosario{
+    background-color: bisque;
+    box-shadow: -3px 3px 20px 3px #6d6d6d;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#glosario h2{
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    color: rgb(246 241 227);
+    font-size: 50px;
+    text-transform: uppercase;
+    background-color: rgb(109, 71, 25);
+    box-shadow: 0 -11px 19px 2px rgb(109, 71, 25);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.lista-glosario{
+    list-style: none;
+}
+
+.img-lista-glosario img{
+    width: 100%;
+    display: block;
+}
+
+.item-glosario{
+    background-color: #68d4ff;
+    max-width: 600px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.item-glosario h3{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.item-glosario p{
+    line-height: 2;
+    margin-bottom: 15px;
+}
+
+.item-glosario p em{
+    color: #69040d;
+}
+
+.lista-peor-generacion{
+    padding: 20px;
+    font-size: 18px;
+    list-style-position: inside;
+    text-align: left;
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #0a5997;
+}
