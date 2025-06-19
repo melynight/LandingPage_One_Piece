@@ -1,170 +1,169 @@
-*{
+* {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0px;
 }
 
-body{
-    font-family: "Lora", serif;
+body {
+    font-family: Lora, serif;
     line-height: 1.5;
-    background-color: #f6f1e3;
+    background-color: rgb(246, 241, 227);
 }
 
-main,
-nav,
-header {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 10px 0px;
+main, nav, header {
+    max-width: 1200px;
+    margin: 0px auto;
 }
 
-img{
+img {
     display: block;
-    margin: 0 auto;
+    margin: 0px auto;
     width: 100%;
 }
 
-h2{
+h2 {
     padding: 10px;
     font-size: 28px;
     margin-top: 20px;
 }
 
-.titulos-principales{
+.titulos-principales {
     text-align: center;
     font-style: italic;
 }
 
-/*HEADER*/
+header {
+    background-image: url("../img/oceano.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-style: solid;
+    border-color: #1e7adf;
+    max-height: 300px;
 
-header{
-    text-align: center;
+    & > img {
+        max-width: 900px;
+    }
 }
 
-header h1{
+header h1 {
     display: none;
 }
 
-/*NAV*/
-
-nav{
+nav {
     text-align: center;
-    background-image: url('../img/background.jpg');
+    background-image: url("../img/backgroundpersonajes.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left bottom;
-    padding: 90px;
-    border-style: double;
-    border-color: #5cd7f6;
+    background-position: top;
+    padding: 30px;
 }
 
 nav a {
-    padding: 13px 20px;
-    margin: 15px;
+    padding: 10px 20px;
+    margin: 12px;
     text-transform: uppercase;
     font-size: 25px;
     text-decoration: none;
     display: inline-block;
     color: black;
-    background-color: #ecd05d;
-    border-radius: 20px;
-    border: 1px solid #000000;
+    background-color: rgb(210 174 136);
+    border-radius: 12px;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 nav a:hover {
     color: whitesmoke;
-    background-color: #0b668a;
+    background-color: rgb(11, 102, 138);
     border: 1px solid whitesmoke;
 }
 
-/*INTRODUCCION*/
-
-#introduccion{
-    background-color: #faebd7;
-    box-shadow: -3px 3px 20px 3px #6d6d6d;
+#introduccion {
+    background-color: rgb(250, 235, 215);
+    box-shadow: rgb(109, 109, 109) -3px 3px 20px 3px;
 }
 
-#introduccion h2{
-    background-color: #833f07;
-    color: #faebd7;
+#introduccion h2 {
+    background-color: rgb(131, 63, 7);
+    color: rgb(250, 235, 215);
 }
 
-.texto-introduccion p{
+.texto-introduccion p {
     line-height: 1.5;
     text-align: justify;
     padding: 20px;
     font-size: 25px;
 }
 
-.texto-introduccion em{
-    color: #002e6b;
+.texto-introduccion em {
+    color: rgb(0, 46, 107);
 }
 
-.texto-introduccion strong{
-    color: #69040d;
+.texto-introduccion strong {
+    color: rgb(105, 4, 13);
 }
 
-.introduccion-img{
+.introduccion-img {
     float: left;
     max-width: 45%;
     margin: 20px;
-    box-shadow: 4px 4px 7px 0px rgb(107, 106, 106);
+    box-shadow: rgb(107, 106, 106) 4px 4px 7px 0px;
     border-radius: 10px;
 }
 
-.introduccion-img-luffy{
+.introduccion-img-luffy {
     float: right;
     max-width: 35%;
     margin: 20px;
-    box-shadow: 4px 4px 7px 0px rgb(107, 106, 106);
+    box-shadow: rgb(107, 106, 106) 4px 4px 7px 0px;
     border-radius: 10px;
 }
 
-/*ARCOS Y SAGAS*/
-
-#arcos-sagas{
+#arcos-sagas {
     background-color: whitesmoke;
-    box-shadow: -3px 3px 20px 3px #6d6d6d;
-    background-image: url(../img/pattern.webp);
+    box-shadow: rgb(109, 109, 109) -3px 3px 20px 3px;
+    background-image: url("../img/pattern.webp");
     background-repeat: repeat;
-    background-position: bottom right;
+    background-position: right bottom;
     background-attachment: fixed;
 }
 
-#arcos-sagas h2{
-    color: #ecd05d;
-    background-color: #5c030c;
+#arcos-sagas h2 {
+    color: rgb(236, 208, 93);
+    background-color: rgb(92, 3, 12);
 }
 
-.lista-sagas{
-    padding: 0 10px;
+.lista-sagas {
+    padding: 0px 10px;
     list-style: none;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.tarjeta-saga{
-    display: inline-block;
-    margin-top: 50px;
+.tarjeta-saga {
     text-align: center;
-    width: 390px;
+    width: 380px;
     vertical-align: top;
+    padding: 10px;
+    margin: 5px;
 }
 
-.lista-sagas li > img{
-    display: block;
+.lista-sagas li > img {
     max-width: 100%;
     margin: auto;
 }
 
-.lista-sagas li > h3{
+.lista-sagas li > h3 {
     text-align: center;
-    background-color: #5c030c;
-    color: #ecd05d;
+    background-color: rgb(92, 3, 12);
+    color: rgb(236, 208, 93);
     text-transform: uppercase;
     padding: 11px;
 }
 
-.saga-descripcion{
-    background-color: #ffa970;
+.saga-descripcion {
+    background-color: rgb(255, 169, 112);
     font-size: 22px;
     line-height: 1.5;
     display: block;
@@ -173,67 +172,82 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
-.bckg-primera{
-    background-color: #efca81;
+.bckg-primera {
+    background-color: rgb(239, 202, 129);
 }
 
-.bckg-segunda{
-    background-color: #77d6fd;
+.bckg-segunda {
+    background-color: rgb(119, 214, 253);
 }
 
-.bckg-tercera{
-    background-color: #feb4e5;
+.bckg-tercera {
+    background-color: rgb(254, 180, 229);
 }
 
-.bckg-cuarta{
-    background-color: #fad48b;
+.bckg-cuarta {
+    background-color: rgb(250, 212, 139);
 }
 
-.bckg-quinta{
-    background-color: #71bb1c;
+.bckg-quinta {
+    background-color: rgb(113, 187, 28);
 }
 
-.bckg-sexta{
-    background-color: #efefef;
+.bckg-sexta {
+    background-color: rgb(239, 239, 239);
 }
 
-.bckg-septima{
-    background-color: #72e7fb;
+.bckg-septima {
+    background-color: rgb(114, 231, 251);
 }
 
-.bckg-octava{
-    background-color: #fa7f33;
+.bckg-octava {
+    background-color: rgb(250, 127, 51);
 }
 
-.bckg-whole{
-    background-color: #ff9ebe;
+.bckg-whole {
+    background-color: rgb(255, 158, 190);
 }
 
-.bckg-wano{
-    background-color: #72e7fb;
+.bckg-wano {
+    background-color: rgb(114, 231, 251);
 }
 
-.bckg-final{
-    background-color: rgb(213 213 213);
-    width: 80%;
-    margin: 40px auto;
-    color: #000000;
+.bckg-final {
+    background-color: rgb(213, 213, 213);
+    color: rgb(0, 0, 0);
+    position: relative;
+
+    .img-logo{
+        width: 93%;
+        margin-top: 2px;
+    }
+
+    .img-luffy{
+        border-style: solid;
+        aspect-ratio: 1/1.065;
+        text-align: center;
+    }
+
+     &::after{
+        position: absolute;
+        background-image: url("../img/backgroundpersonajes.jpg");
+    }
+
 }
 
-.lista-sagas li h4{
-    margin: 0 auto;
+.lista-sagas li h4 {
+    margin: 0px auto;
     text-align: center;
     font-size: 22px;
     font-weight: 300;
-    background-color: #5c030c;
-    color: #faebd7;
+    background-color: rgb(92, 3, 12);
+    color: rgb(250, 235, 215);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    padding: 1px 0;
+    padding: 1px 0px;
 }
 
-
-.arcos p{
+.arcos p {
     font-size: 18px;
     display: block;
     text-align: right;
@@ -242,195 +256,189 @@ nav a:hover {
     font-weight: 700;
 }
 
-
-/*PERSONAJES*/
-
-#personajes{
-    box-shadow: -3px 3px 20px 3px #6d6d6d;
-    background-image: url(../img/backgroundpersonajes.jpg);
+#personajes {
+    box-shadow: rgb(109, 109, 109) -3px 3px 20px 3px;
+    background-image: url("../img/backgroundpersonajes.jpg");
     background-repeat: repeat;
-    background-position: bottom center;
+    background-position: center bottom;
     background-attachment: fixed;
     background-size: cover;
     padding-bottom: 20px;
     margin-top: 20px;
 }
 
-#personajes h2{
+#personajes h2 {
     padding: 10px;
-    background-color: #e1c591;
+    background-color: rgb(225, 197, 145);
     margin-bottom: 30px;
 }
 
-#personajes h3{
-    box-shadow: -3px 3px 20px 3px #1f1d1d;
+#personajes h3 {
+    box-shadow: rgb(31, 29, 29) -3px 3px 20px 3px;
     padding: 10px 0px;
     text-align: center;
     margin-bottom: 20px;
     font-size: 25px;
 }
 
-.tarjeta-personaje{
+.tarjeta-personaje {
     max-width: 70%;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
-.tarjeta{
+.tarjeta {
     max-width: 80%;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
-.tarjeta img{
+.tarjeta img {
     width: 100%;
 }
 
-.descripcion{
+.descripcion {
     width: 80%;
-    margin: 0 auto 30px auto;
+    margin: 0px auto 30px;
     line-height: 2;
     font-size: 20px;
     padding: 10px 20px;
 }
 
-.luffy{
-    background-color: #751328;
+.luffy {
+    background-color: rgb(117, 19, 40);
     color: antiquewhite;
-    border-top: 6px solid #751328;
+    border-top: 6px solid rgb(117, 19, 40);
 }
 
-.luffy h3{
-    background-color: #b62141;
+.luffy h3 {
+    background-color: rgb(182, 33, 65);
 }
 
-.zoro{  
-    background-color: #9fed54;
-    border-top: 5px solid #9fed54;
+.zoro {
+    background-color: rgb(159, 237, 84);
+    border-top: 5px solid rgb(159, 237, 84);
 }
 
-.zoro h3{
-    background-color: #64b419;
+.zoro h3 {
+    background-color: rgb(100, 180, 25);
 }
 
-.nami{
-    background-color: #fe9f58;
-    border-top: 5px solid #fe9f58;
+.nami {
+    background-color: rgb(254, 159, 88);
+    border-top: 5px solid rgb(254, 159, 88);
 }
 
-.nami h3{
-    background-color: #f17d24;
+.nami h3 {
+    background-color: rgb(241, 125, 36);
 }
 
-.usopp{
+.usopp {
     background-color: bisque;
     border-top: 5px solid bisque;
 }
 
-.usopp h3{
+.usopp h3 {
     background-color: rgb(245, 203, 152);
 }
 
-.sanji{
-    background-color: #e1e06a;
-    border-top: 5px solid #e1e06a;
+.sanji {
+    background-color: rgb(225, 224, 106);
+    border-top: 5px solid rgb(225, 224, 106);
 }
 
-.sanji h3{
-    background-color: #d8d51e;
+.sanji h3 {
+    background-color: rgb(216, 213, 30);
 }
 
-.chopper{
+.chopper {
     background-color: rgb(212, 152, 72);
     border-top: 5px solid rgb(212, 152, 72);
 }
 
-.chopper h3{
+.chopper h3 {
     background-color: rgb(204, 131, 35);
 }
 
-.robin{
+.robin {
     background-color: rgb(6, 184, 154);
     border-top: 5px solid rgb(6, 184, 154);
 }
 
-.robin h3{
+.robin h3 {
     background-color: rgb(74, 238, 211);
 }
 
-.franky{
-    background-color: #1eb0d9;
-    border-top: 5px solid #1eb0d9;
+.franky {
+    background-color: rgb(30, 176, 217);
+    border-top: 5px solid rgb(30, 176, 217);
 }
 
-.franky h3{
-    background-color: #80e4ff
+.franky h3 {
+    background-color: rgb(128, 228, 255);
 }
 
-.brook{
+.brook {
     background-color: rgb(212, 201, 201);
     border-top: 5px solid rgb(212, 201, 201);
 }
 
-.brook h3{
+.brook h3 {
     background-color: rgb(170, 147, 147);
 }
 
-.jinbe{
+.jinbe {
     background-color: rgb(185, 235, 255);
     border-top: 5px solid rgb(185, 235, 255);
 }
 
-.jinbe h3{
+.jinbe h3 {
     background-color: rgb(100, 204, 245);
 }
 
-/*CARTOGRAFIA*/
-
-#cartografia{
-    background-color: #f5f5f5;
-    box-shadow: -3px 3px 20px 3px #6d6d6d;
-    margin: 0 auto;
+#cartografia {
+    background-color: rgb(245, 245, 245);
+    box-shadow: rgb(109, 109, 109) -3px 3px 20px 3px;
+    margin: 0px auto;
 }
 
-#cartografia h2{
-    background-color: #fcd7ac;
-
+#cartografia h2 {
+    background-color: rgb(252, 215, 172);
 }
 
-.contenedor-blue-star p{
+.contenedor-blue-star p {
     padding: 20px;
     font-size: 17px;
     text-align: center;
 }
 
-.contenedor-blue-star ul{
+.contenedor-blue-star ul {
     background-color: whitesmoke;
-    padding-left: 20px; 
+    padding-left: 20px;
 }
 
-.zona{
+.zona {
     padding-bottom: 50px;
 }
 
-.oceanos-principales li{
+.oceanos-principales li {
     list-style: none;
-    padding-left: 0;
+    padding-left: 0px;
     font-size: 20px;
     text-align: center;
     line-height: 2;
 }
 
-.blue-star-img:hover{
+.blue-star-img:hover {
     background: none;
     opacity: 1;
     transition: 1s;
 }
 
-.blue-star-img img{
+.blue-star-img img {
     padding: 10px;
 }
 
-.contenedor-east-blue h3{
-    background-color: #75530d;
+.contenedor-east-blue h3 {
+    background-color: rgb(117, 83, 13);
     color: whitesmoke;
     text-align: center;
     padding: 5px;
@@ -438,230 +446,224 @@ nav a:hover {
     border-top-left-radius: 10px;
 }
 
-.contenedor-east-blue{
-    background-color: #f5f5f5;
+.contenedor-east-blue {
+    background-color: rgb(245, 245, 245);
     text-align: center;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
-.contenedor-east-blue span{
-    
-}
-
-.contenedor-east-blue p{
+.contenedor-east-blue p {
     line-height: 1.8;
     font-size: 20px;
-    background-color: #ab8231;
+    background-color: rgb(171, 130, 49);
     border-style: double;
-    border-color: #ffe4ae;
-    color: #000000;
+    border-color: rgb(255, 228, 174);
+    color: rgb(0, 0, 0);
 }
 
-.contenedor-east-blue p span{
+.contenedor-east-blue p span {
     color: whitesmoke;
 }
 
-.contenedor-east-blue h4{
-    background-color: #d4c9c9;
+.contenedor-east-blue h4 {
+    background-color: rgb(212, 201, 201);
     padding: 20px;
-    color: #473411;
+    color: rgb(71, 52, 17);
     text-align: left;
     font-size: 17px;
 }
 
-.islas-east-blue{
+.islas-east-blue {
     list-style: none;
     margin: 20px auto;
     padding-bottom: 15px;
 }
-.islas-east-blue li{
+
+.islas-east-blue li {
     text-align: left;
-    background-color: #d5b35f;
+    background-color: rgb(213, 179, 95);
     margin: 4px;
     padding: 5px;
     font-size: 16px;
 }
 
-.islas-east-blue li:nth-child(odd){
-    background-color: #ffefc6;
+.islas-east-blue li:nth-child(2n+1) {
+    background-color: rgb(255, 239, 198);
 }
 
-/*GLOSARIO*/
-#glosario{
+#glosario {
     background-color: bisque;
-    box-shadow: -3px 3px 20px 3px #6d6d6d;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    box-shadow: rgb(109, 109, 109) -3px 3px 20px 3px;
+    margin: 0px auto 20px;
     padding-bottom: 20px;
 }
 
-#glosario h2{
-    color: rgb(246 241 227);
+#glosario h2 {
+    color: rgb(246, 241, 227);
     font-size: 28px;
     background-color: rgb(109, 71, 25);
 }
 
-.lista-glosario, .indice-glosario{
+.lista-glosario, .indice-glosario {
     list-style: none;
 }
 
-.indice-item{
+.indice-item {
     display: block;
     width: 50%;
     margin: 10px auto;
     text-align: center;
 }
 
-.indice-item a:hover{
-    background-color: #0b668a;
+.indice-item a:hover {
+    background-color: rgb(11, 102, 138);
     color: whitesmoke;
 }
 
-.indice-item a{
+.indice-item a {
     padding: 5px;
     text-transform: uppercase;
     font-size: 15px;
     text-decoration: none;
     display: block;
     border-radius: 5px;
-    border: 1px solid #000000;
+    border: 1px solid rgb(0, 0, 0);
     color: black;
 }
 
-.indice-glosario li:nth-child(odd)
-{
-    background-color: #d9d9d9;
+.indice-glosario li:nth-child(2n+1) {
+    background-color: rgb(217, 217, 217);
 }
 
-.indice-glosario li:nth-child(even)
-{
-    background-color: rgb(255 208 151);
+.indice-glosario li:nth-child(2n) {
+    background-color: rgb(255, 208, 151);
 }
 
-.item-glosario{
-    background-color: #fabd00;
+.item-glosario {
+    background-color: rgb(250, 189, 0);
     max-width: 650px;
     display: block;
     margin: 40px auto;
 }
 
-.item-glosario h3{
+.item-glosario h3 {
     margin-bottom: 5px;
     padding-bottom: 5px;
-    background-color: #69040d;
+    background-color: rgb(105, 4, 13);
     color: whitesmoke;
 }
 
-.item-glosario p{
+.item-glosario p {
     line-height: 2;
     margin-bottom: 15px;
     padding: 5px 10px;
 }
 
-.item-glosario p em{
-    color: #69040d;
+.item-glosario p em {
+    color: rgb(105, 4, 13);
 }
 
-.lista-peor-generacion{
+.lista-peor-generacion {
     padding: 20px;
     font-size: 18px;
     list-style-position: inside;
     text-align: left;
 }
 
-.quote{
+.quote {
     display: block;
     padding: 30px;
     font-size: 15px;
     font-style: italic;
-    margin: 10px 10px;
-    background-color: #69040d;
+    margin: 10px;
+    background-color: rgb(105, 4, 13);
     border-radius: 20px;
-    color: #e9e7e8;
+    color: rgb(233, 231, 232);
 }
-/*FOOTER*/
 
-footer{
-    background-color: #72bbf3;
-    background-image: url('../img/background.jpg');
+footer {
+    background-color: rgb(114, 187, 243);
+    background-image: url("../img/background_footer.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
-    box-shadow: -3px 3px 20px 3px #6d6d6d;
+    background-position: right bottom;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 470px;
+    position: relative;
 }
 
-.alumno{
-    padding: 25px;
-    color: #f9f3f3;
-    text-shadow: 3px 3px 5px #211b1b;
+.alumno {
+    padding: 14px 25px 0px;
+    color: rgb(249, 243, 243);
+    text-shadow: rgb(33, 27, 27) 3px 3px 5px;
     font-size: 20px;
-    line-height: 1.4;
-    width: 340px;
-    text-align: center;
 }
 
-.alumno p{
+.alumno p {
     text-align: left;
-    left: 5px;
-    padding: 0 0 0 20px;
+    padding-left: 20px;
 }
 
-.alumno img{
+.alumno img {
     display: inline;
     max-width: 250px;
     border-radius: 50%;
-    text-align: left;
 }
 
-.alumno a{
+.alumno a {
     text-align: center;
-    color: #002e6b;
+    color: rgb(255, 0, 0);
 }
 
-.alumno a:hover{
-    color: #56c9f7;
+.alumno a:hover {
+    color: rgb(86, 201, 247);
 }
 
-.fuentes{
+.fuentes {
     width: 20%;
-    margin: 0px 0px 0px auto;
+    margin-left: auto;
     padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
-.fuentes p{
+.fuentes p {
     display: block;
-    color: #000000;
+    color: rgb(37, 11, 11);
     border-radius: 10px;
-    text-align: center;
-    text-shadow: 2px 2px 4px #ffeeee;
+    text-align: right;
+    text-shadow: rgb(211, 211, 211) 2px 3px 3px;
     font-size: 22px;
     margin-right: 10px;
+    font-weight: 600;
 }
 
-.fuentes li{
+.fuentes li {
     list-style: none;
     display: inline;
     text-align: center;
 }
 
-.fuentes li a{
+.fuentes li a {
     display: block;
     text-decoration: none;
-    color: #002e6b;
-    background-color: #e7b642;
+    color: rgb(0, 46, 107);
+    background-color: rgb(231, 182, 66);
     border-radius: 10px;
-    padding: 5px 5px;
-    margin: 5px 5px;
+    padding: 5px;
+    margin: 5px;
     font-size: 13px;
 }
 
-.fuentes li a:hover{
-    background-color: #002e6b;
-    color: #e7b642;
+.fuentes li a:hover {
+    background-color: rgb(0, 46, 107);
+    color: rgb(231, 182, 66);
 }
 
-.fuentes li a:active{
-    background-color: #69040d;
-    color: #e7b642;
+.fuentes li a:active {
+    background-color: rgb(105, 4, 13);
+    color: rgb(231, 182, 66);
 }

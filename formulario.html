@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>One Piece</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link href="css/estilos_form.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <header>
+                <h1><strong lang="en">One Piece</strong>: La serie animada</h1>
+                <img src="img/logo2.png" alt="Logo One Piece">
+            </header>
+        </div>
+        <div class="contenedor-nav">
+            <nav>
+                <a href="index.html">Introducción</a>
+                <a href="arcos_sagas.html">Arcos y sagas</a>
+                <a href="personajes.html">Personajes</a>
+                <a href="cartografia.html">Cartografía</a>
+                <a href="glosario.html">Glosario</a>
+            </nav>
+        </div>
+        <main>
+            <section id="form">
+                <div class="formulario">
+                    <h2>Llená el formulario a continuación para participar del sorteo semanal por increíbles premios</h2>
+                    <form method="POST" action="#">
+                        <div class="info-principal">
+                            <label for="nombre">Nombre</label>
+                        </div> 
+                        <div class="input-info-principal">
+                            <input type="text" name="nombre" id="nombre">
+                        </div>       
+                        <div class="info-principal">
+                        <label for="email">Email</label> 
+                        </div>
+                        <div class="input-info-principal">
+                            <input type="email" name="email" id="email">
+                        </div> 
+                        <div class="label-personajes">
+                            <label for="personaje">¿Cuál es tu <span lang="ja">mugiwara</span> favorito?</label>
+                        </div>      
+                        <div class="dropdown-personajes">
+                            <select id="color_pr" name="color_pr">
+                                <option value="none" selected>ELIGE UN PERSONAJE</option>
+                                <option value="luffy">Luffy</option>
+                                <option value="zoro">Zoro</option>
+                                <option value="sanji">Sanji</option>
+                                <option value="jimbe">Jimbe</option>
+                                <option value="brook">Brook</option>
+                                <option value="usopp">Usopp</option>
+                                <option value="nami">Nami</option>
+                                <option value="robin">Nico Robin</option>
+                                <option value="chopper">Chopper</option>
+                                <option value="franky">Franky</option>
+                            </select>
+                        </div>
+                        <div class="contenedor-fondo">
+                        <div class="label-newsletter">
+                            <h3>Temas que me gustaría recibir novedades</h3>
+                        </div>
+                            <div class="contenedor-valoraciones">
+                                <div class="opcion">
+                                    <input type="checkbox" id="teorias" name="teorias" value="teorias">
+                                    <label for="teorias">Teorías del One Piece</label>
+                                </div>
+                                <div class="opcion">
+                                    <input type="checkbox" id="promociones" name="promociones" value="promociones">
+                                    <label for="promociones">Promociones de nuestro productos oficiales</label>
+                                </div>
+
+                                <div class="opcion">
+                                    <input type="checkbox" id="foro" name="foro" value="foro">
+                                    <label for="foro">Foro de la comunidad One Piece Argentina</label>
+                                </div>
+                                <div class="opcion">
+                                    <input type="checkbox" id="eventos" name="eventos" value="eventos">
+                                    <label for="eventos">Eventos de la ciudad</label>
+                                </div>
+                                <div class="opcion">                          
+                                    <input type="checkbox" id="newsletter" name="newsletter" value="newsletter" checked>
+                                        <label for="newsletter">¡Deseo recibir todas las novedades que puedan haber!</label>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="contenedor-textarea"> 
+                            <div class="contenedor-comentarios">
+                                <label for="comentarios">Comentarios</label>  
+                                    <textarea id="comentarios" name="comentarios" maxlength="400" placeholder="Mi escena favorita de One Piece..." maxlength="200"></textarea>
+                            </div> 
+                        </div>     
+                        <div class="boton">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+                <div class="alumno">
+                    <img src="img/mi-foto.jpg" alt="Imagen de la creadora de la landing page">
+                    <p>Melany Nahir Dalama</p>
+                    <p>26 años</p>
+                    <p>melinahir.md@gmail.com</p>
+                    <p>Maquetado y Desarrollo Web</p>
+                    <p>1° Cuatrimestre 2025</p>
+                    <p>
+                        <a href="https://github.com/melynight/" target="_blank">Github</a>
+                        <a href="https://www.linkedin.com/in/melany-nahir-dalama/" target="_blank">Linkedin</a>
+                    </p>
+                </div>
+                <div class="fuentes">
+                    <p>Fuentes</p>
+                    <ul>
+                        <li><a href="https://onepiece.fandom.com/es/wiki/One_Piece_Wiki" target="_blank">Wiki <span lang="en">One Piece</span></a></li>
+                        <li><a href="https://www.espinof.com/listas/one-piece-todas-sagas-arcos-anime-que-episodios-incluyen" target="_blank"><span lang="en">Espinof</span></a></li>
+                        <li><a href="https://fanart.tv/" target="_blank">Fan <span lang="en">Art</span></a></li>
+                    </ul>
+                </div>
+        </footer>
+    </body>
+</html>

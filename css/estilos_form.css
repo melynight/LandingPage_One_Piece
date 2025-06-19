@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+    font-family: 'Lora', sans-serif;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0rem auto;
+}
+
+.formulario{
+    background-image: url('../img/poster.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center left;
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 5px rgb(37, 37, 37);
+}
+
+form{
+    background: antiquewhite;
+    width: 68%;
+    margin: 0 auto;
+    padding: 15px 0px;
+    background-color: #612127;
+}
+
+.boton input {
+    background: #84cbdc;
+    border: 1px solid #9a6c51;
+    border-radius: 2px;
+    margin: 27px auto;
+    color: #000000;
+    display: block;
+    width: 90%;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Lora', sans-serif;
+    cursor: pointer;
+}
+
+.boton input:hover {
+    color: #612127;
+    background-color: #dd962c;
+    transition: 1s cubic-bezier(0.25, 0.1, 0, 1.01);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form input {
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid #dd962c;
+    margin-bottom: 10px;
+    padding: 8px 25px 5px;
+    font-family: 'Lora', sans-serif;
+    color: #eddea6;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #612127;
+}
+
+.contenedor-comentarios{
+    text-align: center;
+    background-color: #612127;
+}
+
+.contenedor-comentarios > label{
+    background-color: #dd962c;
+    color: #100f02;
+    padding: 2px;
+    font-size: 19px;
+    width: 100%;
+    display: block;
+    font-style: italic;
+}
+
+.info-principal{
+    padding: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #84cbdc;
+    text-shadow: 1px 1px 2px #84cbdc;
+}
+
+.input-info-principal{
+    padding-left: 5px;
+}
+
+form textarea {
+    width: 90%;
+    height: 180px;
+    font-family: 'Lora', sans-serif;
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    border: 2px solid #d1a400;
+    background-color: #eddea6;
+    resize: none;
+    padding: 7px;
+}
+
+
+h1{
+    text-align: center;
+    padding: 0.5em 0px 0.5em;
+    margin: 1px auto;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: rgb(221 150 44);
+    color: antiquewhite;
+    border: solid transparent;
+    width: 960px;
+}
+
+h2{
+    padding: 5px;
+    font-size: 14px;
+    background-color: rgb(132 203 220);
+    color: #1a1206;
+    text-align: center;
+    border: solid transparent;
+    width: 68%;
+    margin: 0 auto;
+}
+
+input, label{
+   display: inline;
+   margin-bottom: 8px;
+   padding: 0 10px;
+}
+
+input{
+    font: inherit;
+    padding: 5px;
+    color: #0b668a;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.label-personajes{
+    text-align: center;
+    font-size: 18px;
+    margin: 21px 0 0px;
+    font-style: italic;
+    color: #dd962c;
+    padding: 7px;
+    border-top-right-radius: 20px;
+    text-shadow: 1px 1px 0px black;
+}
+
+.dropdown-personajes{
+    background-color: #612127;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 24px;
+}
+
+.dropdown-personajes > select{
+    font-size: 14px;
+    text-align: center;
+    border-style: none;
+    border-bottom-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+    background-color: #84cbdc;
+    padding: 5px;
+    width: 40%;
+    border-top-style: inset;
+}
+
+.label-newsletter{
+    text-align: center;
+    font-size:medium;
+    margin: 10px 0 10px;
+}
+
+.contenedor-fondo{
+    background-color: #dd962c;
+    padding-top: 1px;
+    border-top-right-radius: 78px;
+    border-top-style: groove;
+    border-color: #ffffff;
+}
+
+.contenedor-valoraciones{
+    background-color: #612127;
+    padding: 13px;
+    border-top-right-radius: 105px;
+}
+
+.contenedor-textarea{
+    background-color: #dd962c;
+    border-top-style: double;
+    border-color: aliceblue;
+}
+
+.opcion{max-width: 78%;background-color: #84cbdc;border-top-left-radius: 8px;border-bottom-right-radius: 8px;font-size: 14px;margin: 5px auto;padding: 6px;box-shadow: 1px 1px 0px 0px #b3b3b3;}
+
+.opcion > input{
+    width: 20px;
+}
+
+.boton input{
+    text-transform: uppercase;
+}
+
+input[type="checkbox"] {
+  accent-color: #612127;
+}
