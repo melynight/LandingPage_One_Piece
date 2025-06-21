@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>One Piece</title>
         <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -20,21 +21,28 @@
            <nav>
                 <a href="index.html">Introducción</a>
                 <a href="arcos_sagas.html">Arcos y sagas</a>
-                <a href="personajes.html">Personajes</a>
+                <a class="active" href="personajes.html">Personajes</a>
                 <a href="cartografia.html">Cartografía</a>
                 <a href="glosario.html">Glosario</a>
+                <a href="videojuegos.html">Videojuegos</a>
+                <a href="formulario.html">Newsletter</a>
             </nav>
         </div>
         <main>
             <section id="personajes">
-                <h2 class="titulos-principales">Personajes: Los piratas Sombrero de Paja</h2>
+                <div class="contenedor-titulo">
+                    <h2 class="titulos-principales">Personajes: Los piratas Sombrero de Paja</h2>
+                    <img src="img/sunnyjpg.png" alt="Barco Sunny">
+                </div>
                 <div class="contenedor-personajes">
-                    <div class="tarjeta-personaje"> 
-                        <div class="tarjeta luffy">
-                            <img src="img/personajes/luffy.png" alt="Personaje Luffy" class="estilo-imagen">
+                    <div class="tarjeta-luffy">
+                         <h3><strong lang="en">Monkey D. Luffy</strong> - El Capitán</h3>
+                         <img src="img/personajes/sombrero.png" alt="Sticker Sombrero de paja">
+                        <div class="marco luffy">
+                            <div class="img-luffy">
+                            </div>
                         </div>
-                        <div class="descripcion luffy">
-                            <h3>👑 <strong lang="en">Monkey D. Luffy</strong> - El Capitán</h3>
+                        <div class="descripcion">
                             <p>
                                 <strong lang="en">Monkey D. Luffy</strong>, más conocido como <strong>Luffy Sombrero de Paja</strong>, es el protagonista principal de la serie de manga y anime <strong lang="en">One Piece</strong>. 
                                 Es el capitán y fundador de los <strong>Piratas de Sombrero de Paja</strong> así como uno de los <em>Cuatro Emperadores</em> que gobiernan los mares del <em>Nuevo Mundo</em>.
@@ -45,24 +53,31 @@
                             </p>
                         </div>
                     </div>
-                    <div class="tarjeta-personaje"> 
-                         <div class="tarjeta zoro">
-                           <img src="img/personajes/zoro.webp" alt="Personaje Zoro" class="estilo-imagen">
+                    <div class="tarjeta-zoro"> 
+                        <h3>Roronoa Zoro - El Espadachín</h3>
+                        <img src="img/personajes/espadas.png" alt="Sticker espadas">
+                         <div class="marco zoro">
+                            <div class="img-zoro">
+                            </div>
                         </div>
-                        <div class="descripcion zoro">
-                            <h3>🗡️ Roronoa Zoro - El Espadachín</h3>                       
+                        <div class="descripcion">                     
                             <p>
-                            Roronoa Zoro, conocido como <strong>El Cazador de Piratas</strong>, es el primer pirata que se unió a <strong lang="en">Monkey D. Luffy</strong>, y el principal combatiente de los Piratas de Sombrero de Paja, 
-                            uno de sus dos espadachines y uno de los oficiales principales de la Gran Flota de Sombrero de Paja, así como un antiguo cazarrecompensas.
+                            Roronoa Zoro, conocido como <strong>El Cazador de Piratas</strong>, es el primer pirata que se unió a <strong lang="en">Monkey D. Luffy</strong>, y el principal combatiente
+                            de los Piratas de Sombrero de Paja, uno de sus dos espadachines y uno de los oficiales principales de la Gran Flota de Sombrero de Paja, así como un antiguo
+                            cazarrecompensas.
+                            Es originario del East Blue y desde joven entrenó intensamente en el arte de la espada con el sueño de convertirse en el mejor espadachín del mundo. 
+                            Zoro utiliza un estilo de combate único llamado Santoryu (estilo de tres espadas), en el que empuña una espada en cada mano y una tercera con la boca.
                             </p>
                         </div>
                     </div>
-                    <div class="tarjeta-personaje">
-                        <div class="tarjeta nami">
-                            <img src="img/personajes/nami.webp" alt="Personaje Nami" class="estilo-imagen">
+                    <div class="tarjeta-nami">
+                        <h3>Nami - La Navegante</h3>
+                        <img src="img/personajes/beri.png" alt="Sticker moneda Beri">
+                         <div class="marco nami">
+                            <div class="img-nami">
                         </div>
-                        <div class="descripcion nami">
-                            <h3>🧭 Nami - La Navegante</h3>
+                        </div>
+                        <div class="descripcion">
                             <p>
                            Nami, apodada <em>Gata Ladrona</em>, es una pirata y la <strong>navegante</strong> de los Piratas del Sombrero de Paja, así como una de los oficiales principales de la Gran Flota de Sombrero de Paja. 
                            Es el tercer miembro de la tripulación y la segunda en unirse, haciéndolo oficialmente durante el arco de <span lang="en">Arlong Park</span>.
@@ -70,12 +85,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="tarjeta-personaje">
-                        <div class="tarjeta usopp">
-                            <img src="img/personajes/usopp.webp" alt="Personaje Usopp" class="estilo-imagen">
+                    <div class="tarjeta-usopp">
+                        <h3>Usopp - El francotirador</h3>
+                        <img src="img/personajes/francotirador.png" alt="Sticker francotirador">
+                        <div class="marco usopp">
+                            <div class="img-usopp">
+                            </div>
                         </div>
-                        <div class="descripcion usopp">
-                            <h3>🎯Usopp - El francotirador</h3>
+                        <div class="descripcion">
                             <p>
                                 Usopp es el <strong>francotirador</strong> de los Piratas de Sombrero de Paja y uno de los oficiales principales de la Gran Flota de Sombrero de Paja. 
                                 Es el cuarto miembro de la tripulación y el tercero en unirse oficialmente. 
@@ -85,12 +102,14 @@
                             </p>
                         </div>
                     </div>
-                        <div class="tarjeta-personaje">
-                            <div class="tarjeta sanji">
-                                <img src="img/personajes/sanji.webp" alt="Personaje Sanji" class="estilo-imagen">
+                        <div class="tarjeta-sanji">
+                            <h3>Vinsmoke Sanji - El Cocinero</h3>
+                            <img src="img/personajes/cocinero.png" alt="Sticker cocinero">
+                            <div class="marco sanji">
+                                 <div class="img-sanji">
+                                </div>
                             </div>
-                            <div class="descripcion sanji">
-                                <h3>🍖 Vinsmoke Sanji - El Cocinero</h3>
+                            <div class="descripcion">    
                                 <p>
                                     <span lang="en">Sanji</span>, conocido como <em>Pierna Negra</em> y nacido como <span lang="en">Vinsmoke Sanji</span>, es el <strong>cocinero</strong> de los Piratas de Sombrero de Paja, 
                                     así como uno de los oficiales principales de la Gran Flota de Sombrero de Paja. 
@@ -104,25 +123,32 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="tarjeta-personaje">
-                            <div class="tarjeta chopper">
-                                <img src="img/personajes/chopper.webp" alt="Personaje Chopper">
+                        <div class="tarjeta-chopper">
+                            <h3><span lang="en">Tony Tony Chopper</span> - El Doctor</h3>
+                            <img src="img/personajes/gorro.png" alt="Sticker gorro doctor">
+                            <div class="marco chopper ">
+                                <div class="img-chopper">
+                                </div>
                             </div>
-                            <div class="descripcion chopper">
-                                <h3>🦴 <span lang="en">Tony Tony Chopper</span> - El Doctor</h3>
+                            <div class="descripcion">
                                 <p>
                                     Tony Tony Chopper, es el <strong>médico</strong> de los Piratas de Sombrero de Paja, así como uno de los oficiales principales de la Gran Flota de Sombrero de Paja.
                                     Es un reno que comió la fruta <em>Hito Hito</em> de la isla de Drum. 
                                     Él es el sexto miembro de la tripulación y el quinto en unirse a ella. Su sueño es poder curar cualquier enfermedad.
+                                    Gracias a la Fruta del Diablo Hito Hito no Mi, Chopper obtuvo inteligencia humana, la capacidad de hablar y transformarse en diversas 
+                                    formas híbridas entre reno y humano. A pesar de ser considerado un "monstruo" en su isla natal, fue acogido y entrenado por el Dr. Hiriluk y más tarde por la Dra. Kureha,
+                                    quienes le enseñaron medicina y lo inspiraron a convertirse en un gran doctor.
                                 </p>
                             </div>
                         </div>
-                    <div class="tarjeta-personaje">
-                        <div class="tarjeta robin">
-                            <img src="img/personajes/robin.webp" alt="Personaje Nico Robin" class="estilo-imagen">
+                    <div class="tarjeta-robin">
+                        <h3><span lang="en">Nico Robin</span> - La Arqueóloga</h3>
+                        <img src="img/personajes/hanahana.png" alt="Sticker hana hana no mi">
+                        <div class="marco robin">
+                            <div class="img-robin">
+                            </div>
                         </div>
-                        <div class="descripcion robin">
-                            <h3>📖 <span lang="en">Nico Robin</span> - La Arqueóloga</h3>
+                        <div class="descripcion">
                             <p>
                                 <span lang="en">Nico Robin</span>, también conocida por sus epítetos: <em>Niña Demonio</em> y <em>La Luz de la Revolución</em> es la <strong>arqueóloga</strong> de los Piratas de Sombrero de Paja,
                                 así como una de los oficiales principales de la Gran Flota de Sombrero de Paja. 
@@ -133,12 +159,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="tarjeta-personaje">
-                        <div class="tarjeta franky">
-                            <img src="img/personajes/franky.png" alt="Personaje Franky" class="estilo-imagen">
+                    <div class="tarjeta-franky">
+                        <h3>Franky - El carpintero</h3>
+                        <img src="img/personajes/carpintero.png" alt="Sticker carpintero">
+                        <div class="marco franky">
+                            <div class="img-franky">
+                            </div>
                         </div>
-                        <div class="descripcion franky">
-                        <h3>🔨 Franky - El carpintero</h3>
+                        <div class="descripcion">
                         <p>
                             Franky, apodado el <em>Hombre de Hierro</em>, 
                             es el <strong>carpintero naval</strong> de los Piratas de Sombrero de Paja y uno de los oficiales principales de la Gran Flota de Sombrero de Paja. 
@@ -149,12 +177,14 @@
                         </p>
                     </div>
                     </div>
-                    <div class="tarjeta-personaje">
-                    <div class="tarjeta brook">
-                        <img src="img/personajes/brook.webp" alt="Personaje Brook" class="estilo-imagen">
+                    <div class="tarjeta-brook">
+                        <h3><span lang="en">Brook</span> - El Músico</h3>
+                        <img src="img/personajes/brooklaboon.png" alt="Sticker Brook y Laboon">
+                    <div class="marco brook">
+                        <div class="img-brook">
+                        </div>
                     </div>
-                    <div class="descripcion brook">
-                        <h3>🎻 <span lang="en">Brook</span> - El Músico</h3>
+                    <div class="descripcion">             
                         <p>
                             Conocido como <em lang="en">Soul King</em>, es el <strong>músico</strong> de los Piratas de Sombrero de Paja, 
                             uno de sus dos espadachines y uno de los oficiales principales de la Gran Flota de Sombrero de Paja. 
@@ -166,16 +196,20 @@
                         </p>
                     </div>
                     </div>
-                    <div class="tarjeta-personaje">                  
-                        <div class="tarjeta jinbe">
-                            <img src="img/personajes/jinbe.jpg" alt="Personaje Jinbe" class="estilo-imagen">
+                    <div class="tarjeta-jinbei">
+                        <h3><span lang="ja">Jinbe</span> - El Timonel</h3>   
+                        <img src="img/personajes/timonel.png" alt="Sticker timonel">               
+                        <div class="marco jinbei">
+                            <div class="img-jinbei">
+                            </div>
                         </div>
-                        <div class="descripcion jinbe">
-                            <h3> ⚓ <span lang="ja">Jinbe</span> - El Timonel</h3>
+                        <div class="descripcion">
                             <p>
                                 Es el <strong>timonel</strong> de los Piratas de Sombrero de Paja y uno de los oficiales principales de la Gran Flota de Sombrero de Paja, 
                                 siendo el décimo miembro de la banda y el noveno en unirse. Es un <em>gyojin</em> tiburón ballena, que sirvió como antiguo capitán de los Piratas del Sol
                                 y como miembro de los <em>Siete Señores</em>de la <em>Guerra del Mar</em>.
+                                Conocido como “El Caballero del Mar”, Jinbe es un poderoso maestro del karate gyojin, un arte marcial que le permite manipular el agua como si fuera una
+                                extensión de su cuerpo, incluso fuera del mar. Gracias a esta habilidad y a su fuerza física sobrehumana, es un combatiente temido tanto en tierra como bajo el agua.
                             </p>
                         </div>
                     </div>

@@ -10,7 +10,7 @@ body {
 }
 
 main, nav, header {
-    max-width: 1200px;
+    max-width: 1680px;
     margin: 0px auto;
 }
 
@@ -32,12 +32,193 @@ h2 {
 }
 
 header {
-    background-image: url("../img/oceano.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../img/banner.jpg");
+    background-position: top center;
+    background-repeat: repeat;
     border-bottom-style: solid;
-    border-color: #1e7adf;
-    max-height: 300px;
+    border-color: rgb(250, 212, 139);
+    background-attachment: fixed;
+    max-height: 266px;
+    max-width: 100%;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     & > img {
         max-width: 900px;
@@ -53,27 +234,70 @@ nav {
     background-image: url("../img/backgroundpersonajes.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top center;
+    background-attachment: fixed;
     padding: 30px;
-}
+    max-width: 100%;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
-nav a {
-    padding: 10px 20px;
-    margin: 12px;
-    text-transform: uppercase;
-    font-size: 25px;
-    text-decoration: none;
-    display: inline-block;
-    color: black;
-    background-color: rgb(210 174 136);
-    border-radius: 12px;
-    border: 1px solid rgb(0, 0, 0);
-}
+    a{
+        padding: 8px 24px;
+        margin: 17px 10px;
+        text-transform: uppercase;
+        font-size: 20px;
+        text-decoration: none;
+        display: inline-block;
+        color: black;
+        background-color: rgb(210 174 136);
+        border-radius: 12px;
+        border: 1px solid rgb(0, 0, 0);
 
-nav a:hover {
-    color: whitesmoke;
-    background-color: rgb(11, 102, 138);
-    border: 1px solid whitesmoke;
+        &:hover,
+        &.active {
+            color: whitesmoke;
+            background-color: rgb(11, 102, 138);
+            border: 1px solid whitesmoke;
+        }
+    }
 }
 
 #introduccion {
@@ -103,7 +327,7 @@ nav a:hover {
 
 .introduccion-img {
     float: left;
-    max-width: 45%;
+    max-width: 35%;
     margin: 20px;
     box-shadow: rgb(107, 106, 106) 4px 4px 7px 0px;
     border-radius: 10px;
@@ -270,7 +494,8 @@ nav a:hover {
 #personajes h2 {
     padding: 10px;
     background-color: rgb(225, 197, 145);
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    padding: 20px;
 }
 
 #personajes h3 {
@@ -279,119 +504,386 @@ nav a:hover {
     text-align: center;
     margin-bottom: 20px;
     font-size: 25px;
+    background-color: #000000;
+    color: antiquewhite;
 }
 
-.tarjeta-personaje {
-    max-width: 70%;
-    margin: 0px auto;
+.contenedor-titulo{
+    position: relative;
+
+    img{
+        position: absolute;
+        width: 8%;
+        top: -35px;
+        left: 20%;
+    }
 }
 
-.tarjeta {
-    max-width: 80%;
-    margin: 0px auto;
+.contenedor-personajes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.tarjeta img {
-    width: 100%;
+.marco{
+    width: 400px;
+    aspect-ratio: 1/1;
+    margin: 10px auto;
+    padding: 5px;
+    background: radial-gradient(rgb(255 205 0 / 76%) 70% 70%);
+    border-radius: 50%;
+}
+
+.tarjeta-luffy{
+    padding: 10px;
+    max-width: 580px;
+    background-color: #871b2e;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    
+    >h3{
+        position: absolute;
+        top: 365px;
+        left: 0;
+        right: 0;
+    }
+
+    >img{
+        position: absolute;
+        width: 20%;
+        top: 300px;
+        rotate: -20deg;
+    }
+
+    .luffy{
+        background: radial-gradient(rgb(255 205 0 / 76%) 70% 70%);
+
+        .img-luffy{
+            height: 100%;
+            border-radius: 50%;
+            background: 
+            url('../img/personajes/luffy2.png') center / 63% no-repeat,
+            linear-gradient(transparent 40%, rgb(120 7 7)),
+            url('../img/nubes.webp') top left / cover no-repeat;
+        }
+    }
+}
+
+.tarjeta-zoro{
+    padding: 10px;
+    max-width: 580px;
+    background-color: #132f1b;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    
+
+    >h3{
+        position: absolute;
+        top: 365px;
+        left: 0;
+        right: 0;
+    }
+
+    >img{
+        position: absolute;
+        width: 20%;
+        top: 280px;
+        rotate: -20deg;
+    }
+
+    .zoro{
+        background: radial-gradient(rgb(95 185 120) 70% 70%);
+        
+
+        .img-zoro{
+            height: 100%;
+            border-radius: 50%;
+            background: url(../img/personajes/zoro.png) center / 75% no-repeat, linear-gradient(transparent 40%, rgb(0 135 6)), url(../img/nubes.webp) top left / cover no-repeat;
+        }
+    }
+}
+
+.tarjeta-nami{
+    padding: 10px;
+    max-width: 580px;
+    background-color: #933b00;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    
+
+    >h3{
+        position: absolute;
+        top: 365px;
+        left: 0;
+        right: 0;
+    }
+
+    >img{
+        position: absolute;
+        width: 16%;
+        bottom: 300px;
+        right: 11px;
+    }
+
+    .nami{
+        background: radial-gradient(rgb(255 134 47) 70% 70%);
+        
+        .img-nami{
+            height: 100%;
+            border-radius: 50%;
+            background: url(../img/personajes/nami.png) center / 110% no-repeat, linear-gradient(transparent 40%, rgb(237 152 76)), url(../img/nubes.webp) top left / cover no-repeat;
+        }
+    }
+}
+
+.tarjeta-usopp{
+    padding: 10px;
+    max-width: 580px;
+    background-color: #002b5c;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    
+    
+    >h3{
+        position: absolute;
+        top: 365px;
+        left: 0;
+        right: 0;
+    }
+
+    >img{
+        position: absolute;
+        width: 20%;
+        bottom: 0;
+        right: 40px;
+        rotate: -2deg;
+    }
+
+    .usopp{
+        background: radial-gradient(rgb(38 81 119) 70% 70%);
+        
+        .img-usopp{
+            height: 100%;
+            border-radius: 50%;
+            background: url(../img/personajes/usopp.png) top left / 81% no-repeat, linear-gradient(transparent 40%, rgb(0 43 92)), url(../img/nubes.webp) top left / cover no-repeat;
+        }
+    }
+}
+
+.tarjeta-sanji{
+    padding: 10px;
+    max-width: 580px;
+    background-color: #736b09;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    
+
+    >h3{
+        position: absolute;
+        top: 365px;
+        left: 0;
+        right: 0;
+    }
+
+    >img{
+        position: absolute;
+        width: 30%;
+        bottom: 0;
+        /* rotate: -20deg; */
+        right: -40px;
+    }
+
+    .sanji{
+        background: radial-gradient(rgb(232 224 124) 70% 70%);
+
+        .img-sanji{
+            height: 100%;
+            border-radius: 50%;
+            background: url(../img/personajes/sanji.png) bottom / 100% no-repeat, linear-gradient(transparent 40%, rgb(253 223 0)), url(../img/nubes.webp) top left / cover no-repeat;
+        }
+    }
+}
+
+.tarjeta-chopper{
+    padding: 10px;
+    max-width: 580px;
+    background-color: #7a4f32;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    
+
+    >h3{
+        position: absolute;
+        top: 365px;
+        left: 0;
+        right: 0;
+    }
+
+    >img{
+        position: absolute;
+        width: 20%;
+        top: 290px;
+        left: 0;
+        rotate: -2deg;
+    }
+
+    .chopper{
+        background: radial-gradient(rgb(156 110 77) 70% 70%);
+        
+
+        .img-chopper{
+            height: 100%;
+            border-radius: 50%;
+            background: url(../img/personajes/chopper.png) top / 70% no-repeat, linear-gradient(transparent 40%, rgb(137 80 42)), url(../img/nubes.webp) top left / cover no-repeat;
+        }
+    }
+}
+
+.tarjeta-robin{
+    padding: 10px;
+    max-width: 580px;
+    background-color: #db5f54;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    
+    >h3{
+        position: absolute;
+        top: 365px;
+        left: 0;
+        right: 0;
+    }
+
+    >img{
+        position: absolute;
+        width: 20%;
+        bottom: 0;
+        right: 10px;
+    }
+
+    .robin{
+        background: radial-gradient(rgb(255 136 127) 70% 70%);
+        
+
+        .img-robin{
+            height: 100%;
+            border-radius: 50%;
+            background: url(../img/personajes/robin.png) bottom/ 100% no-repeat, linear-gradient(transparent 40%, rgb(67 83 150)), url(../img/nubes.webp) top left / cover no-repeat;
+        }
+    }
+}
+
+.tarjeta-franky{
+    padding: 10px;
+    max-width: 580px;
+    background-color: #008fa0;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    
+    >h3{
+        position: absolute;
+        top: 365px;
+        left: 0;
+        right: 0;
+    }
+
+    >img{
+        position: absolute;
+        width: 20%;
+        top: 290px;
+        rotate: -9deg;
+    }
+
+    .franky{
+        background: radial-gradient(rgb(255 152 153) 70% 70%);
+        
+        .img-franky{
+            height: 100%;
+            border-radius: 50%;
+            background: url(../img/personajes/franky.png) center / 90% no-repeat, linear-gradient(transparent 40%, rgb(0 157 181)), url(../img/nubes.webp) top left / cover no-repeat;
+        }
+    }
+}
+
+.tarjeta-brook{
+    padding: 10px;
+    max-width: 580px;
+    background-color: #641502;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+
+    >h3{
+        position: absolute;
+        top: 365px;
+        left: 0;
+        right: 0;
+    }
+
+    >img{
+        position: absolute;
+        width: 20%;
+        top: 330px;
+        rotate: 20deg;
+    }
+
+    .brook{
+        background: radial-gradient(rgb(243 114 8) 70% 70%);
+        
+        .img-brook{
+            height: 100%;
+            border-radius: 50%;
+            background: url(../img/personajes/brook.png) bottom / 125% no-repeat, linear-gradient(transparent 40%, rgb(254 203 135)), url(../img/nubes.webp) top left / cover no-repeat;
+        }
+    }
+}
+
+.tarjeta-jinbei{
+    padding: 10px;
+    max-width: 580px;
+    background-color: #224b8c;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    
+    >h3{
+        position: absolute;
+        top: 365px;
+        left: 0;
+        right: 0;
+    }
+
+    >img{
+        position: absolute;
+        width: 17%;
+        top: 331px;
+        rotate: 20deg;
+        right: 10px;
+    }
+
+    .jinbei{
+        background: radial-gradient(rgb(139 52 64) 70% 70%);
+        .img-jinbei{
+            height: 100%;
+            border-radius: 50%;
+            background: url(../img/personajes/jinbei.png) center/ 100% no-repeat, linear-gradient(transparent 40%, rgb(95 132 181)), url(../img/nubes.webp) top left / cover no-repeat;
+        }
+    }
 }
 
 .descripcion {
     width: 80%;
-    margin: 0px auto 30px;
     line-height: 2;
     font-size: 20px;
-    padding: 10px 20px;
-}
-
-.luffy {
-    background-color: rgb(117, 19, 40);
+    margin: 20px auto;
     color: antiquewhite;
-    border-top: 6px solid rgb(117, 19, 40);
-}
-
-.luffy h3 {
-    background-color: rgb(182, 33, 65);
-}
-
-.zoro {
-    background-color: rgb(159, 237, 84);
-    border-top: 5px solid rgb(159, 237, 84);
-}
-
-.zoro h3 {
-    background-color: rgb(100, 180, 25);
-}
-
-.nami {
-    background-color: rgb(254, 159, 88);
-    border-top: 5px solid rgb(254, 159, 88);
-}
-
-.nami h3 {
-    background-color: rgb(241, 125, 36);
-}
-
-.usopp {
-    background-color: bisque;
-    border-top: 5px solid bisque;
-}
-
-.usopp h3 {
-    background-color: rgb(245, 203, 152);
-}
-
-.sanji {
-    background-color: rgb(225, 224, 106);
-    border-top: 5px solid rgb(225, 224, 106);
-}
-
-.sanji h3 {
-    background-color: rgb(216, 213, 30);
-}
-
-.chopper {
-    background-color: rgb(212, 152, 72);
-    border-top: 5px solid rgb(212, 152, 72);
-}
-
-.chopper h3 {
-    background-color: rgb(204, 131, 35);
-}
-
-.robin {
-    background-color: rgb(6, 184, 154);
-    border-top: 5px solid rgb(6, 184, 154);
-}
-
-.robin h3 {
-    background-color: rgb(74, 238, 211);
-}
-
-.franky {
-    background-color: rgb(30, 176, 217);
-    border-top: 5px solid rgb(30, 176, 217);
-}
-
-.franky h3 {
-    background-color: rgb(128, 228, 255);
-}
-
-.brook {
-    background-color: rgb(212, 201, 201);
-    border-top: 5px solid rgb(212, 201, 201);
-}
-
-.brook h3 {
-    background-color: rgb(170, 147, 147);
-}
-
-.jinbe {
-    background-color: rgb(185, 235, 255);
-    border-top: 5px solid rgb(185, 235, 255);
-}
-
-.jinbe h3 {
-    background-color: rgb(100, 204, 245);
 }
 
 #cartografia {
@@ -427,14 +919,20 @@ nav a:hover {
     line-height: 2;
 }
 
-.blue-star-img:hover {
-    background: none;
-    opacity: 1;
-    transition: 1s;
-}
+.blue-star-img{
+    background: url(../img/background-mapa.png), linear-gradient(169deg, rgb(105, 4, 13), #e0c588);
+    background-position: center,
+    center;
+    background-repeat: no-repeat;
+    background-size: cover,
+    auto;
 
-.blue-star-img img {
-    padding: 10px;
+    img {
+        padding: 18px;
+        width: 67%;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px 3px black;
+    }
 }
 
 .contenedor-east-blue h3 {
@@ -451,15 +949,16 @@ nav a:hover {
     text-align: center;
     max-width: 900px;
     margin: 0px auto;
+    position: relative;
 }
 
 .contenedor-east-blue p {
     line-height: 1.8;
     font-size: 20px;
-    background-color: rgb(171, 130, 49);
     border-style: double;
     border-color: rgb(255, 228, 174);
     color: rgb(0, 0, 0);
+    background-color: rgb(117 83 13);
 }
 
 .contenedor-east-blue p span {
@@ -474,18 +973,76 @@ nav a:hover {
     font-size: 17px;
 }
 
-.islas-east-blue {
+ul.islas-east-blue {
     list-style: none;
     margin: 20px auto;
     padding-bottom: 15px;
+    position: relative;
 }
 
-.islas-east-blue li {
+.deco-mapa{
+    position: absolute;
+    max-width: 240px;
+    bottom: 40px;
+    right: 30px;
+    background: linear-gradient(45deg, rgb(231, 182, 66), transparent);
+    border-radius: 50%;
+    box-shadow: 0px -1px 20px 3px #3f3f3f;
+}
+
+ul.islas-east-blue li {
+    display: flex;
+    align-items: center;
     text-align: left;
-    background-color: rgb(213, 179, 95);
     margin: 4px;
-    padding: 5px;
+    padding: 10px 15px;
+    background: rgb(255, 169, 112);
     font-size: 16px;
+    border-radius: 20px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    img{
+      width: 24px;
+      height: 24px;
+      margin: 0px;
+    }
 }
 
 .islas-east-blue li:nth-child(2n+1) {
@@ -666,4 +1223,34 @@ footer {
 .fuentes li a:active {
     background-color: rgb(105, 4, 13);
     color: rgb(231, 182, 66);
+}
+
+/*VIDEOJUEGOS*/
+
+.contenedor-trailer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+    
+    h3{
+        position: absolute;
+        background-color: #d29e35;
+        padding: 8px;
+        border-radius: 20px;
+        top: -17px;
+    }
+}
+
+.trailer-ambition{
+    width: 85%;
+    aspect-ratio: 16/9;
+    padding: 15px;
+    background-image: linear-gradient(90deg,
+        rgb(231, 182, 66),
+        rgb(124, 57, 1)
+    );
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 0px rgb(36, 36, 36);
 }
