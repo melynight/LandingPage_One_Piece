@@ -696,7 +696,7 @@ nav {
     background-color: rgb(245, 245, 245);
     box-shadow: rgb(109, 109, 109) -3px 3px 20px 3px;
     margin: 0px auto;
-    background: url('../img/background.png');
+    background: url('../img/background_cartografia.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -726,7 +726,7 @@ nav {
 }
 
 .blue-star-img{
-    background: url(../img/background-mapa.png), linear-gradient(169deg, rgb(105, 4, 13), #e0c588);
+    background: url('../img/background-mapa.png'), linear-gradient(169deg, rgb(105, 4, 13), #e0c588);
     background-position: 
     center,
     center;
@@ -1145,14 +1145,6 @@ footer {
     right: 0px;
 }
 
-#cartografia {
-    background-color: rgb(245, 245, 245);
-    box-shadow: rgb(109, 109, 109) -3px 3px 20px 3px;
-    margin: 0px auto;
-    background: url('../img/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 #cartografia h2 {
     background-color: rgb(252, 215, 172);
