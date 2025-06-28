@@ -7,10 +7,10 @@ body {
     font-family: Lora, serif;
     line-height: 1.5;
     background-color: rgb(246, 241, 227);
-}
+} 
 
 main, nav, header {
-    max-width: 1680px;
+    max-width: 1350px;
     margin: 0px auto;
 }
 
@@ -38,187 +38,8 @@ header {
     border-bottom-style: solid;
     border-color: rgb(250, 212, 139);
     background-attachment: fixed;
-    max-height: 266px;
+    max-height: 290px;
     max-width: 100%;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
     & > img {
         max-width: 900px;
@@ -239,46 +60,6 @@ nav {
     padding: 30px;
     max-width: 100%;
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
     a{
         padding: 8px 24px;
         margin: 17px 10px;
@@ -288,14 +69,22 @@ nav {
         display: inline-block;
         color: black;
         background-color: rgb(210 174 136);
-        border-radius: 12px;
-        border: 1px solid rgb(0, 0, 0);
-
-        &:hover,
-        &.active {
+        border-top: 4px solid rgb(105 4 13);
+        box-shadow: 3px -3px 4px 0px #393939;
+        
+        &:hover{
             color: whitesmoke;
             background-color: rgb(11, 102, 138);
-            border: 1px solid whitesmoke;
+            border-bottom: 4px solid whitesmoke;
+            border-top: 4px solid rgb(11, 102, 138);
+
+        }
+
+        &.active {
+            border-style: none;
+            color: whitesmoke;
+            background-color: rgb(105, 4, 13);
+            border-bottom: 4px solid whitesmoke;
         }
     }
 }
@@ -327,18 +116,20 @@ nav {
 
 .introduccion-img {
     float: left;
-    max-width: 35%;
+    max-width: 320px;
     margin: 20px;
     box-shadow: rgb(107, 106, 106) 4px 4px 7px 0px;
     border-radius: 10px;
+    filter: drop-shadow(7px 4px 6px skyblue);
 }
 
 .introduccion-img-luffy {
     float: right;
-    max-width: 35%;
+    max-width: 270px;
     margin: 20px;
     box-shadow: rgb(107, 106, 106) 4px 4px 7px 0px;
     border-radius: 10px;
+    filter: drop-shadow(6px 3px 5px skyblue);
 }
 
 #arcos-sagas {
@@ -348,11 +139,13 @@ nav {
     background-repeat: repeat;
     background-position: right bottom;
     background-attachment: fixed;
+    padding-bottom: 20px;
 }
 
 #arcos-sagas h2 {
     color: rgb(236, 208, 93);
     background-color: rgb(92, 3, 12);
+    margin-bottom: 20px;
 }
 
 .lista-sagas {
@@ -446,17 +239,29 @@ nav {
         margin-top: 2px;
     }
 
-    .img-luffy{
-        border-style: solid;
+    .img-luffy-custom{
+        border: 4px solid #80b2f4;
+        border-bottom: none;
         aspect-ratio: 1/1.065;
         text-align: center;
+        background: url('../img/nubes.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        
+        >p{
+            font-size: 27px;      
+            margin: 0 auto;        
+            text-align: center;         
+            text-shadow: 0 0 3px #000000;         
+            text-transform: uppercase;         
+            position: absolute;     
+            left: 19px;       
+            bottom: 29px;          
+            color: blueviolet;            
+            font-weight: bold;
+        }
     }
-
-     &::after{
-        position: absolute;
-        background-image: url("../img/backgroundpersonajes.jpg");
-    }
-
 }
 
 .lista-sagas li h4 {
@@ -494,8 +299,7 @@ nav {
 #personajes h2 {
     padding: 10px;
     background-color: rgb(225, 197, 145);
-    margin-bottom: 60px;
-    padding: 20px;
+    margin-bottom: 30px;
 }
 
 #personajes h3 {
@@ -513,16 +317,18 @@ nav {
 
     img{
         position: absolute;
-        width: 8%;
-        top: -35px;
-        left: 20%;
+        width: 80px;
+        top: -15px;
+        left: 225px;
     }
 }
 
 .contenedor-personajes{
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .marco{
@@ -541,7 +347,7 @@ nav {
     border-radius: 20px;
     position: relative;
     margin-bottom: 30px;
-    
+
     >h3{
         position: absolute;
         top: 365px;
@@ -890,21 +696,21 @@ nav {
     background-color: rgb(245, 245, 245);
     box-shadow: rgb(109, 109, 109) -3px 3px 20px 3px;
     margin: 0px auto;
+    background: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#cartografia h2 {
-    background-color: rgb(252, 215, 172);
-}
+.contenedor-blue-star{
+    p {
+        padding: 15px;
+        font-size: 17px;
+        text-align: center;
+    }
 
-.contenedor-blue-star p {
-    padding: 20px;
-    font-size: 17px;
-    text-align: center;
-}
-
-.contenedor-blue-star ul {
-    background-color: whitesmoke;
-    padding-left: 20px;
+    ul {
+        padding-left: 20px;
+    }
 }
 
 .zona {
@@ -921,18 +727,40 @@ nav {
 
 .blue-star-img{
     background: url(../img/background-mapa.png), linear-gradient(169deg, rgb(105, 4, 13), #e0c588);
-    background-position: center,
+    background-position: 
+    center,
     center;
     background-repeat: no-repeat;
-    background-size: cover,
+    background-size: 
+    cover,
     auto;
-
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 18px 2px rgb(105, 4, 13);
+    
     img {
         padding: 18px;
         width: 67%;
         border-radius: 20px;
         box-shadow: 0px 0px 20px 3px black;
     }
+}
+
+.info-mares{
+    
+max-width: 1200px;
+    
+margin: 0 auto;
+    
+background: linear-gradient(0deg, rgb(236, 208, 93), #e0c588);
+    
+padding: 5px;
+    
+border-bottom-right-radius: 20px;
+    
+border-bottom-left-radius: 20px;
+    
+margin-bottom: 20px;
 }
 
 .contenedor-east-blue h3 {
@@ -945,9 +773,8 @@ nav {
 }
 
 .contenedor-east-blue {
-    background-color: rgb(245, 245, 245);
     text-align: center;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0px auto;
     position: relative;
 }
@@ -1001,42 +828,6 @@ ul.islas-east-blue li {
     border-radius: 20px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
     img{
       width: 24px;
@@ -1046,7 +837,8 @@ ul.islas-east-blue li {
 }
 
 .islas-east-blue li:nth-child(2n+1) {
-    background-color: rgb(255, 239, 198);
+    background-color: rgb(117 83 13);
+    color: #ffffff;
 }
 
 #glosario {
@@ -1054,6 +846,11 @@ ul.islas-east-blue li {
     box-shadow: rgb(109, 109, 109) -3px 3px 20px 3px;
     margin: 0px auto 20px;
     padding-bottom: 20px;
+    background: url('../img/backgroundpersonajes.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #glosario h2 {
@@ -1066,9 +863,13 @@ ul.islas-east-blue li {
     list-style: none;
 }
 
+.indice-glosario{
+    max-width: 50%;
+    margin: 35px auto;
+}
+
 .indice-item {
     display: block;
-    width: 50%;
     margin: 10px auto;
     text-align: center;
 }
@@ -1079,14 +880,15 @@ ul.islas-east-blue li {
 }
 
 .indice-item a {
-    padding: 5px;
+    padding: 3px;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 20px;
     text-decoration: none;
     display: block;
     border-radius: 5px;
-    border: 1px solid rgb(0, 0, 0);
     color: black;
+    border-top: 4px solid #69040d;
+    font-weight: bold;
 }
 
 .indice-glosario li:nth-child(2n+1) {
@@ -1099,9 +901,8 @@ ul.islas-east-blue li {
 
 .item-glosario {
     background-color: rgb(250, 189, 0);
-    max-width: 650px;
-    display: block;
-    margin: 40px auto;
+    /* max-width: 650px; */
+    /* margin: 40px auto; */
 }
 
 .item-glosario h3 {
@@ -1141,21 +942,29 @@ ul.islas-east-blue li {
 
 footer {
     background-color: rgb(114, 187, 243);
-    background-image: url("../img/background_footer.png");
+    background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right bottom;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 470px;
+    height: 285px;
+    display: flex;
+    align-items: flex-end;
     position: relative;
+    margin-top: 50px;
+    box-shadow: 0 0 9px 2px #5d5a5a;
 }
+
 
 .alumno {
     padding: 14px 25px 0px;
     color: rgb(249, 243, 243);
     text-shadow: rgb(33, 27, 27) 3px 3px 5px;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 15px;
+    left: 20%;
 }
 
 .alumno p {
@@ -1167,6 +976,7 @@ footer {
     display: inline;
     max-width: 250px;
     border-radius: 50%;
+    box-shadow: 0 0 14px 5px #94855a;
 }
 
 .alumno a {
@@ -1182,7 +992,6 @@ footer {
     width: 20%;
     margin-left: auto;
     padding: 5px;
-    position: absolute;
     top: 0;
     right: 0;
 }
@@ -1227,6 +1036,21 @@ footer {
 
 /*VIDEOJUEGOS*/
 
+#videojuegos {
+    background-color: rgb(250, 235, 215);
+    box-shadow: rgb(109, 109, 109) -3px 3px 20px 3px;
+    padding-bottom: 20px;
+    .texto-introduccion{
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+#videojuegos h2 {
+    background-color: rgb(131, 63, 7);
+    color: rgb(250, 235, 215);
+}
+
 .contenedor-trailer{
     display: flex;
     align-items: center;
@@ -1253,4 +1077,135 @@ footer {
     );
     border-radius: 10px;
     box-shadow: 3px 3px 3px 0px rgb(36, 36, 36);
+}
+
+.contenedor-videojuegos{
+    padding: 20px;
+}
+
+.videojuego{
+    display: flex;
+    box-shadow: 1px 2px 11px rgb(58, 58, 58);
+    background-image: url('../img/background-tarjetas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+}
+
+.año-videojuego{
+    padding: 18px 30px 13px 30px;
+    background: linear-gradient(180deg, #b97125, transparent);
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 2px -6px 13px 0px #595959;
+    display: inline-block;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.año-videojuego.intermedio{
+        background: linear-gradient(80deg, #d99a0270, transparent);
+}
+
+.nombre-videojuego{
+    display: inline-block;
+    padding: 11px;
+    border-top: solid;
+    border-color: #bc782c;
+    text-align: center;
+}
+
+.nombre-videojuego.intermedio{border-color: #dfb045;}
+
+.info-videojuego{
+    margin: 20px;
+    text-shadow: 0px 0px 8px #9f9f9f;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.gif-luffy{
+    width: 110px;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 11px 1px black;
+    background: linear-gradient(45deg, #fff, transparent);
+}
+
+.sticker-luffy{
+    position: absolute;
+    width: 120px;
+    top: -40px;
+    right: 0px;
+}
+
+#cartografia {
+    background-color: rgb(245, 245, 245);
+    box-shadow: rgb(109, 109, 109) -3px 3px 20px 3px;
+    margin: 0px auto;
+    background: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cartografia h2 {
+    background-color: rgb(252, 215, 172);
+    margin-bottom: 30px;
+}
+
+.contenedor-blue-star p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contenedor-blue-star ul {
+    text-align: center;
+    font-weight: bold;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 25px;
+    background: linear-gradient(1deg, rgb(11, 102, 138), transparent);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 20px 5px rgb(0, 46, 107);
+}
+
+.oceanos-principales li {
+    list-style: none;
+    font-size: 20px;
+    text-shadow: 0px 0px 4px rgb(107, 106, 106);
+    line-height: 1.9;
+}
+
+.indice-glosario li:nth-child(2n+1) {
+    background-color: rgb(217, 217, 217);
+}
+
+.indice-glosario li:nth-child(2n) {
+    background-color: rgb(255, 208, 151);
+}
+
+.item-glosario {
+    background-color: rgb(250, 189, 0);
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 13px 2px #fabd00;
+}
+
+.sticker-luffy{
+    position: absolute;
+    width: 120px;
+    top: -40px;
+    right: 0px;
 }
